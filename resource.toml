@@ -1,0 +1,11 @@
+type = 'csharp'
+client-type = 'csharp'
+main = 'server/MarcusCZ.AltV.VZones.Server.dll'
+client-main = 'client/MarcusCZ.AltV.VZones.Client.dll'
+client-files = [
+    'client/*'
+]
+
+[vzones]
+global_checking = true
+discord_webhook = ''

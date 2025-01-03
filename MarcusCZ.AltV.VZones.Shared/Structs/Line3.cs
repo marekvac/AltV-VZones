@@ -1,6 +1,6 @@
 ﻿using System.Numerics;
 
-namespace MarcusCZ.AltV.VZones.Client.Structs;
+namespace MarcusCZ.AltV.VZones.Shared.Structs;
 
 public class Line3
 {

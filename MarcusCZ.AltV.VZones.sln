@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarcusCZ.AltV.VZones.Server
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarcusCZ.AltV.VZones.Client.VTargetAPI", "MarcusCZ.AltV.VZones.Client.VTargetAPI\MarcusCZ.AltV.VZones.Client.VTargetAPI.csproj", "{A95C49FD-0598-4E09-A7DD-D3151EE9932F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarcusCZ.AltV.VZones.Shared", "MarcusCZ.AltV.VZones.Shared\MarcusCZ.AltV.VZones.Shared.csproj", "{7453FD7C-E7B4-4E4D-BBDB-ED8C1568621E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{A95C49FD-0598-4E09-A7DD-D3151EE9932F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A95C49FD-0598-4E09-A7DD-D3151EE9932F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A95C49FD-0598-4E09-A7DD-D3151EE9932F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7453FD7C-E7B4-4E4D-BBDB-ED8C1568621E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7453FD7C-E7B4-4E4D-BBDB-ED8C1568621E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7453FD7C-E7B4-4E4D-BBDB-ED8C1568621E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7453FD7C-E7B4-4E4D-BBDB-ED8C1568621E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

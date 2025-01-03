@@ -1,7 +1,7 @@
 ﻿using System.Numerics;
-using MarcusCZ.AltV.VZones.Client.Util;
+using MarcusCZ.AltV.VZones.Shared.Util;
 
-namespace MarcusCZ.AltV.VZones.Client.Structs;
+namespace MarcusCZ.AltV.VZones.Shared.Structs;
 
 public class Rectangle3
 {

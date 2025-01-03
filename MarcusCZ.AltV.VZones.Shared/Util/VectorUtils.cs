@@ -1,6 +1,6 @@
 ﻿using System.Numerics;
 
-namespace MarcusCZ.AltV.VZones.Client.Util;
+namespace MarcusCZ.AltV.VZones.Shared.Util;
 
 public static class VectorUtils
 {

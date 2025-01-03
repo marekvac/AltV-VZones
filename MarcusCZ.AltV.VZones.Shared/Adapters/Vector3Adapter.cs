@@ -1,9 +1,9 @@
 ﻿using System.Numerics;
 using AltV.Net;
 
-namespace MarcusCZ.AltV.VZones.Client.Adapters;
+namespace MarcusCZ.AltV.VZones.Shared.Adapters;
 
-public class Vector2Adapter : IMValueAdapter<Vector2>
+public class Vector3Adapter : IMValueAdapter<Vector3>
 {
     object IMValueBaseAdapter.FromMValue(IMValueReader reader)
     {
@@ -12,38 +12,43 @@ public class Vector2Adapter : IMValueAdapter<Vector2>
 
     public void ToMValue(object obj, IMValueWriter writer)
     {
-        if (!(obj is Vector2 vector2))
+        if (!(obj is Vector3 vector2))
             return;
         ToMValue(vector2, writer);
     }
 
-    public Vector2 FromMValue(IMValueReader reader)
+    public Vector3 FromMValue(IMValueReader reader)
     {
-        Vector2 vector2 = default;
+        Vector3 vector3 = new Vector3();
         reader.BeginObject();
         while (reader.HasNext())
         {
             switch (reader.NextName())
             {
                 case "x":
-                    vector2.X = (float) reader.NextDouble();
+                    vector3.X = (float) reader.NextDouble();
                     break;
                 case "y":
-                    vector2.Y = (float) reader.NextDouble();
+                    vector3.Y = (float) reader.NextDouble();
+                    break;
+                case "z":
+                    vector3.Z = (float) reader.NextDouble();
                     break;
             }
         }
         reader.EndObject();
-        return vector2;
+        return vector3;
     }
 
-    public void ToMValue(Vector2 value, IMValueWriter writer)
+    public void ToMValue(Vector3 value, IMValueWriter writer)
     {
         writer.BeginObject();
         writer.Name("x");
         writer.Value((double) value.X);
         writer.Name("y");
         writer.Value((double) value.Y);
+        writer.Name("z");
+        writer.Value((double) value.Z);
         writer.EndObject();
     }
 }
