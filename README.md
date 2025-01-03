@@ -98,10 +98,12 @@ Two methods to manage editor:
 
 ### Zone export
 
+Exports current zone as a csharp code or json object to Discord channel.
+
 - Command line: `zones export <type>`
 - Emit `player.Emit("vzones:editor", "export", "<type>");`
 
-Types are `cs` or `json`
+Types are `cs` (csharp) or `json`
 
 #### Editor leave
 - `zones exit`
