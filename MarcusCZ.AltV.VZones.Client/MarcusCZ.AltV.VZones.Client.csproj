@@ -6,6 +6,9 @@
         <Nullable>enable</Nullable>
         <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
         <Version>2.2.0</Version>
+        <Authors>MarcusCZ</Authors>
+        <RepositoryUrl>https://github.com/marekvac/AltV-VZones</RepositoryUrl>
+        <PackageTags>altv</PackageTags>
     </PropertyGroup>
 
     <ItemGroup>
