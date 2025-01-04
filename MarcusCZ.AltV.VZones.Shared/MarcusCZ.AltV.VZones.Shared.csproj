@@ -8,10 +8,16 @@
         <Authors>MarcusCZ</Authors>
         <RepositoryUrl>https://github.com/marekvac/AltV-VZones</RepositoryUrl>
         <PackageTags>altv</PackageTags>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     </PropertyGroup>
 
     <ItemGroup>
       <PackageReference Include="AltV.Net.Shared" Version="16.4.4-dev.1" />
     </ItemGroup>
 
+    <ItemGroup>
+        <None Include="..\README.md" Pack="true" PackagePath="\"/>
+        <None Include="..\LICENSE.txt" Pack="true" PackagePath="\"/>
+    </ItemGroup>
 </Project>

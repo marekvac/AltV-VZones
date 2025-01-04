@@ -9,6 +9,8 @@
         <Authors>MarcusCZ</Authors>
         <RepositoryUrl>https://github.com/marekvac/AltV-VZones</RepositoryUrl>
         <PackageTags>altv</PackageTags>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     </PropertyGroup>
 
     <ItemGroup>
@@ -19,4 +21,8 @@
       <ProjectReference Include="..\MarcusCZ.AltV.VZones.Shared\MarcusCZ.AltV.VZones.Shared.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+        <None Include="..\README.md" Pack="true" PackagePath="\"/>
+        <None Include="..\LICENSE.txt" Pack="true" PackagePath="\"/>
+    </ItemGroup>
 </Project>
